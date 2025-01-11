@@ -1,0 +1,85 @@
+:root {
+  --container-width: 720px;
+  --container-height: 550px;
+}
+
+.outerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: var(--container-width);
+  height: var(--container-height);
+  overflow: hidden;
+}
+
+.imgWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+}
+
+.before,
+.after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.before {
+  clip: rect(0, calc(var(--container-width) / 2), var(--container-height), 0);
+  /* Initially showing half of the image */
+}
+
+.slider {
+  position: absolute;
+  /* bottom: 50%; */
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slider:focus-visible ~ .slider-button {
+  outline: 5px solid balck;
+  outline-offset: 3px;
+}
+
+.sliderLine {
+  position: absolute;
+  inset: 0;
+  width: 0.2rem;
+  height: 100%;
+  left: 50%;
+  background-color: white;
+  z-index: 10;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.sliderButton {
+  position: absolute;
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 100vw;
+  display: grid;
+  place-items: cetner;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  box-shadow: 1px 1px 1px hsl(0, 50%, 2%, 0.5);
+  cursor: pointer;
+  pointer-events: none;
+}
