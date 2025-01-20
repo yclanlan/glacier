@@ -20,7 +20,7 @@ h2 {
 }
 
 p {
-  font-size: calc(0.6rem + 0.5vw);
+  font-size: calc(0.8rem + 0.2vw);
   text-wrap: pretty;
   /* text-wrap: balance; */
   color: white;
