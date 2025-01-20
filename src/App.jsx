@@ -146,19 +146,7 @@ const sections = [
 ];
 
 
-const [width, setWidth] = useState<number>(window.innerWidth);
 
-function handleWindowSizeChange() {
-    setWidth(window.innerWidth);
-}
-useEffect(() => {
-    window.addEventListener('resize', handleWindowSizeChange);
-    return () => {
-        window.removeEventListener('resize', handleWindowSizeChange);
-    }
-}, []);
-
-const isMobile = width <= 768;
 
 function App() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -177,9 +165,30 @@ function App() {
     }
   }, [activeIndex]);
 
+
+  const [width, setWidth] = useState(window.innerWidth);
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+}
+useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+        window.removeEventListener('resize', handleWindowSizeChange);
+    }
+}, []);
+
+
+const isMobile = width <= 768;
+
+
   if(isMobile) {
     return (
-      <div> This content is available only on desktop</div>
+      <div style={{
+                  "display":"flex",
+                  "justify-content":"center",
+                  "align-items":"center",
+                  "height":"100vh" ,
+                 }}> This content is only available on desktop</div>
   )
   }
   {
