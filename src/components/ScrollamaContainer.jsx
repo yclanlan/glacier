@@ -63,7 +63,7 @@ function ScrollamaContainer({
                   </div>
 
                   {/* <Textbox width={"30%"} xPosition={3} yPosition={100}> */}
-                  <Textbox width={"30%"} position={"left"} yPosition={100}>
+                  <Textbox width={"30%"} position={"left"} yPosition={120}>
                     Imagine a frozen behemoth so massive that its fate could
                     redraw the world's coastlines.
                   </Textbox>
@@ -108,8 +108,8 @@ function ScrollamaContainer({
             >
               <>
                 <Textbox width={"30%"} position={"right"} yPosition={50}>
-                  To understand the rapid changes happening with Thwaites
-                  Glacier, we need to look beneath its surface.
+                   To understand the rapid changes happening with Thwaites
+                   Glacier, we need to look beneath its surface.
                   <br />
                   <br />
                   This 3D model reveals the Glacier's essential parts —its ice
@@ -337,7 +337,7 @@ function ScrollamaContainer({
           >
             <div
               style={{
-                width: "35vw",
+                width: "37vw",
                 position: "relative",
                 padding: "1rem 3rem", // To offset slides a tiny bit from the left side of the screen
                 zIndex: "50",
@@ -348,8 +348,9 @@ function ScrollamaContainer({
               <AnimatedHeading type={"h2"}>
                 Drilling into the Unknown: Unexpected Findings Beneath Thwaites
               </AnimatedHeading>
-              <br />
+              
               <p>
+              <br />
                 A breakthrough in late 2019 brought scientists closer than ever
                 to Thwaites' hidden underside. British Antarctic Survey
                 scientist Peter Davis and his team drilled through 600 meters of
@@ -666,12 +667,12 @@ function ScrollamaContainer({
               alignItems: "center", // Centers content vertically
               justifyContent: "flex-start", // Centers content horizontally
               // gap: "2rem", // Add vertical space between children
-              padding: "20vh 0 10vh 0",
+              padding: "30vh 0 10vh 0",
             }}
           >
             <div
               style={{
-                width: "35vw",
+                width: "60vw",
                 position: "relative",
                 padding: "1rem 3rem", // To offset slides a tiny bit from the left side of the screen
                 zIndex: "50",
@@ -681,21 +682,26 @@ function ScrollamaContainer({
               <AnimatedHeading type={"h2"}>
                 The Global Impact of a Melting Antarctica
               </AnimatedHeading>
-              <br />
-              <p>
+              
+              <p style={{
+                
+              }}>
+                <br />
                 Rising seas threaten more than coastlines. This visualization
                 from the IPCC Special Report shows the cascading effects of
                 ocean warming and polar ice loss. From marine ecosystems to
                 mountain regions, the changes in Antarctica ripple across the
                 globe, affecting everything from food security to water
                 resources.
+                <br />
+                <br />
               </p>
             </div>
             <TreeDiagram data={"./assets/data.json"} />
 
             <div
               style={{
-                width: "35vw",
+                width: "60vw",
                 position: "relative",
                 padding: "1rem 3rem", // To offset slides a tiny bit from the left side of the screen
                 zIndex: "50",
@@ -706,7 +712,7 @@ function ScrollamaContainer({
               }}
             >
               <hr
-                style={{ width: "10vw", alignSelf: "flex-start", margin: 0 }}
+                style={{ width: "50vw", alignSelf: "flex-start", margin: 0 }}
               />
               <p
                 style={{

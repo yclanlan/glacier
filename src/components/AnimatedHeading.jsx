@@ -42,9 +42,9 @@ function AnimatedHeading({ type, yPosition, children }) {
   ) : type === "p" ? (
     <div
       style={{
-        width: "35vw",
+        width: "45vw",
         position: "relative",
-        marginLeft: "4rem",
+        
         padding: "1rem 3rem", // To offset slides a tiny bit from the left side of the screen
         top: `${yPosition}vh`,
         // left: `${xPosition}vw`,

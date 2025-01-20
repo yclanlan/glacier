@@ -50,8 +50,8 @@ function Textbox(props) {
     paddingTop: `calc(0.1rem + 0.2vh)`,
     paddingBottom: `calc(0.1rem + 0.2vh)`,
 
-    paddingLeft: `calc(0.3rem + 1vw)`,
-    paddingRight: `calc(0.3rem + 0.65vw)`,
+    paddingLeft: `calc(0.5em + 1vw)`,
+    paddingRight: `calc(0.5em + 0.75vw)`,
 
     top: `${yPosition}vh`,
     zIndex: "50",

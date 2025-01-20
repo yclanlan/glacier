@@ -1,11 +1,3 @@
-
-.app {
-  /* display: flex; */
-  /* justify-content: flex-start; */
-  /* padding: 20px; */
-  /* position: fixed; */
-}
-
 body {
   font-size: 18px; /* Base size */
   line-height: 1.8rem;
@@ -20,8 +12,9 @@ h2 {
 }
 
 p {
-  font-size: calc(0.8rem + 0.2vw);
+  font-size: calc(0.9rem + 0.27vw);
   text-wrap: pretty;
+  line-height:calc(1.9rem + 0.27vh); ;
   /* text-wrap: balance; */
   color: white;
 }
