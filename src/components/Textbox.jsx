@@ -44,13 +44,21 @@ function Textbox(props) {
     minWidth: "30vw",
     width: width || "100%",
     backgroundColor: "rgba(0, 0, 0, .5)",
-    borderRadius: "0.5rem",
+    borderRadius: "0.3rem",
     position: "relative",
-    padding: "3rem",
+
+    paddingTop: `calc(0.1rem + 0.2vh)`,
+    paddingBottom: `calc(0.1rem + 0.2vh)`,
+
+    paddingLeft: `calc(0.3rem + 1vw)`,
+    paddingRight: `calc(0.3rem + 0.65vw)`,
+
     top: `${yPosition}vh`,
     zIndex: "50",
+    
+    lineHeight:"1.9rem",
     // If position is 'left', add margin to left. If 'right', push to right using margin-left: auto
-    marginLeft: position === "left" ? "4rem" : "auto",
+    marginLeft: position === "left" ? "6rem" : "auto",
     marginRight: position === "right" ? "4rem" : "auto",
   };
 

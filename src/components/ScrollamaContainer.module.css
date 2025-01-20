@@ -1,3 +1,5 @@
+
+
 .content {
   /* margin-left: 150px; */
   width: 100vw;
@@ -37,8 +39,8 @@
 
 .headline {
   font-weight: 400;
-  font-size: 2.4rem;
-  line-height: 3.6rem;
+  font-size: calc(1.5rem + 0.8vh + 0.5vw);
+  line-height: calc(2.5rem + 1vh + 0.5vw);
   /* padding: 20rem 0; */
 }
 
