@@ -188,7 +188,9 @@ const isMobile = width <= 768;
                   "justify-content":"center",
                   "align-items":"center",
                   "height":"100vh" ,
-                 }}> This content is only available on desktop</div>
+                  "fontSize":"16"
+                 }}> Only available on desktop
+                 </div>
   )
   }
   {
