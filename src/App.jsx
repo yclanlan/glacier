@@ -6,7 +6,6 @@ import Timeline from "./components/TimeLine";
 // import Draggable from "./components/Draggable";
 // import { Scrollama, Step } from "react-scrollama";
 import ScrollamaContainer from "./components/ScrollamaContainer";
-// import {isMobile} from 'react-device-detect';
 
 
 const sections = [
@@ -146,6 +145,21 @@ const sections = [
   },
 ];
 
+
+const [width, setWidth] = useState<number>(window.innerWidth);
+
+function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+}
+useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+        window.removeEventListener('resize', handleWindowSizeChange);
+    }
+}, []);
+
+const isMobile = width <= 768;
+
 function App() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [showTimeline, setShowTimeline] = useState(false); // Controls animation
@@ -163,12 +177,12 @@ function App() {
     }
   }, [activeIndex]);
 
-  // if(isMobile) {
-  //   return (
-  //     <div> This content is available only on desktop</div>
-  // )
-  // }
-  // {
+  if(isMobile) {
+    return (
+      <div> This content is available only on desktop</div>
+  )
+  }
+  {
 
   
   return (
@@ -215,6 +229,6 @@ function App() {
     </div>
   );
 }
-// }
+}
 
 export default App;
